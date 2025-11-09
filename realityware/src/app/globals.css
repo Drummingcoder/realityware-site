@@ -9,7 +9,7 @@
   --neutral: #a9a9a9;
   --accent: #ff7a00;
   --white: #ffffff;
-  --black: #000000;
+  --lightblack: #242222;
 }
 
 
@@ -20,6 +20,7 @@
   --color-secondary: var(--secondary);
   --color-neutral: var(--neutral);
   --color-accent: var(--accent);
+  --color-lightblack: var(--lightblack);
 }
 
 body {

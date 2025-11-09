@@ -17,6 +17,7 @@ const config: Config = {
         secondary: 'var(--secondary)',
         neutral: 'var(--neutral)',
         accent: 'var(--accent)',
+        lightblack: 'var(--lightblack)',
       },
     },
   },
