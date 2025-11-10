@@ -16,6 +16,9 @@
   --border-light: #e7e5e4; 
   --border-dark: #a8a29e;
   --card-background: #ffffff;
+  --lightblack: #242222;
+  --gray: #cfebe840;
+  --purple: #cf5fd7;
 }
 
 
@@ -26,6 +29,9 @@
   --color-secondary: var(--secondary);
   --color-neutral: var(--neutral);
   --color-accent: var(--accent);
+  --color-lightblack: var(--lightblack);
+  --color-purple: var(--purple);
+  --color-gray: var(--gray);
 }
 
 body {
