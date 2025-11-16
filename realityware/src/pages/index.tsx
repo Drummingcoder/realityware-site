@@ -32,15 +32,41 @@ export default function Home() {
         </a>
       </div> */}
       <div className="min-h-screen items-center justify-center">
-        <header className="bg-gradient-to-b from-background via-background to-accent w-full mx-auto min-h-[20vh] pt-[18vh] pb-[12vw]">
+        <header className="bg-gradient-to-b from-background via-background to-accent w-full mx-auto min-h-[20vh] pt-[18vh] pb-[12vw]" id="home">
           {showTitle && (
-            <div className="fixed top-0 left-0 w-full z-50 bg-background/80 backdrop-blur shadow text-left py-2">
-              <span className="text-[2.5vw] font-bold text-foreground ml-[2vw]">Realityware</span>
+            <div className="fixed top-0 left-0 w-full z-2 bg-background/80 backdrop-blur shadow text-left py-2 items-center flex">
+              <span className="text-[calc(2vw+2vh)] font-bold text-foreground ml-[2vw] text-left">Realityware</span>
+              <nav className="flex flex-row items-center flex-1 z-3 mr-[2vw]">
+                <ul className="flex flex-row space-x-12 ml-auto">
+                  <li>
+                    <a href="#home" className="text-lg text-foreground hover:text-primary font-bold transition underline">Home</a>
+                  </li>
+                  <li>
+                    <a href="#about" className="text-lg text-foreground hover:text-primary font-bold transition underline">About</a>
+                  </li>
+                  <li>
+                    <a href="#faq" className="text-lg text-foreground hover:text-primary font-bold transition underline">FAQ</a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           )}
           <div className="absolute top-0 left-[38vw] z-50 max-width max-w-xs px-[4vw]">
             <Image src="/flag-orpheus-top.png" alt="Hack Club logo" width={181} height={63} className="object-contain w-[calc(8vw+15vh)] h-auto" />
           </div>
+          <nav className="absolute top-0 right-[2vw] w-full flex flex-row items-center justify-end py-4 z-50">
+            <ul className="flex flex-row space-x-12">
+              <li>
+                <a href="#home" className="text-lg text-foreground hover:text-purple font-bold transition underline">Home</a>
+              </li>
+              <li>
+                <a href="#about" className="text-lg text-foreground hover:text-purple font-bold transition underline">About</a>
+              </li>
+              <li>
+                <a href="#faq" className="text-lg text-foreground hover:text-purple font-bold transition underline">FAQ</a>
+              </li>
+            </ul>
+          </nav>
           <div className="flex items-center justify-center mb-[3vh] relative">
             <h1 className="text-[calc(6vw+6vh)] font-bold text-center text-foreground flex-1">Realityware</h1>
           </div>
@@ -54,10 +80,10 @@ export default function Home() {
           </section>
         </header>
   
-        <main className="w-full p-8 bg-accent mx-auto">
+        <main className="w-full p-8 bg-accent mx-auto" id="about">
           <section className="space-y-4">
             {/* This can be worded better */}
-            <p className="block px-[1vw] py-[2vh] text-[calc(1.6vw+3.3vh)] rounded text-center underline text-black">Completing the YSWS</p>
+            <p className="mt-[4vh] block px-[1vw] py-[2vh] text-[calc(1.6vw+3.3vh)] rounded text-center underline text-black">Completing the YSWS</p>
           </section>
           <section className="items-center flex mt-[10vh] justify-center">
             <p className="inline-block w-[25vw] h-[42vh] px-[1vw] py-[2vh] border border-[2vw] border-gray bg-secondary rounded-lg shadow-lg rounded text-center text-lightblack text-[calc(0.9vw+1.2vh)] overflow-y-auto">Step 1: Come up with an idea! <span className="block mt-[3vh] text-[calc(0.6vw+0.9vh)] text-justify">It can be anything, as well as a solution can be built for it! The better your idea is to help society, the better reward you will get!</span></p>
@@ -86,7 +112,7 @@ export default function Home() {
             <p className="inline-block w-[25vw] h-[40vh] px-[1vw] py-[2vh] border border-[2vw] border-gray bg-yellow-500 rounded-lg shadow-lg rounded text-lightblack text-center text-[calc(0.9vw+1.2vh)] overflow-y-auto">Step 5: Use your grant to build your project!<span className="block mt-[3vh] text-[calc(0.6vw+0.9vh)] text-justify">The project isn't finished until it's up and working! You can win even more prizes by doing so!</span></p>
           </section>
 
-          <section className="flex items-center justify-center max-width mt-[18vh]">
+          <section className="flex items-center justify-center max-width mt-[18vh]" id="faq">
             <div className="relative bg-white pb-[2vh] w-[67vw] h-auto border border-black border-[0.25vw] shadow-lg rounded [clip-path:polygon(0%_0%,calc(100%-6vw)_0%,100%_6vw,100%_100%,0%_100%)]">
               <div className="absolute -top-[0.25vw] -right-[0.25vw] pointer-events-none">
                 <div className="w-[6vw] h-[6vw] border-[0.25vw] border-black"></div>
